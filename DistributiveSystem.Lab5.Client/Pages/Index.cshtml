@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+   <div class="container">
+   <form method="post">
+        <lable>Amount: </lable><input name="amount" type="number" /> <br />
+        <lable>Rate: </lable><input name="rate" type="text" /><br />
+        <input type="submit" value="Send" />
+   </form>
+   <div/>
+        <div class="container">Answer = @Model.Message</div>
+</div>
+
+
+<style>
+    label, input{
+        margin: 5px;
+    }
+    .container {
+        display: flex;
+       justify-content: center;
+       margin:3px;
+    }
+</style>
